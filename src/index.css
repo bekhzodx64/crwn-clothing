@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	body {
+		@apply font-[Montserrat];
+	}
+}
+
 @layer components {
 	.directory-container {
 		@apply w-full flex flex-wrap justify-between;
