@@ -44,4 +44,21 @@
 	.category-body-container p {
 		@apply font-light;
 	}
+
+	.navigation {
+		@apply w-full flex justify-between mb-6;
+		height: 70px;
+	}
+	.logo-container {
+		@apply h-full p-6;
+		width: 70px;
+	}
+
+	.nav-links-container {
+		@apply w-1/2 h-full flex items-center justify-end;
+	}
+
+	.nav-link {
+		@apply px-4 py-[10px] cursor-pointer;
+	}
 }
