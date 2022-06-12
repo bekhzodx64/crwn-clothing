@@ -46,12 +46,10 @@
 	}
 
 	.navigation {
-		@apply w-full flex justify-between mb-6;
-		height: 70px;
+		@apply w-full h-[70px] flex justify-between mb-6;
 	}
 	.logo-container {
-		@apply h-full p-6;
-		width: 70px;
+		@apply h-full p-6 w-[70px];
 	}
 
 	.nav-links-container {
@@ -60,5 +58,45 @@
 
 	.nav-link {
 		@apply px-4 py-[10px] cursor-pointer;
+	}
+
+	.customGroup {
+		@apply relative my-10;
+	}
+
+	.form-input {
+		@apply bg-white text-lg px-2 pt-2 pb-1 block border-b my-6 outline-none;
+	}
+
+	.form-input-label {
+		@apply text-gray-400 absolute pointer-events-none left-2 top-1/2 -translate-y-1/2  transition-all;
+	}
+
+	.form-input:focus ~ .form-input-label {
+		@apply -top-1 text-xs text-black transition-all;
+	}
+
+	.customShrink {
+		@apply -top-1 text-xs text-black;
+	}
+
+	.sign-up-container {
+		@apply flex flex-col w-full max-w-sm;
+	}
+
+	.sign-up-container h2 {
+		@apply my-[10px];
+	}
+
+	.button-container {
+		@apply min-w-[165px] w-auto h-12 tracking-wider leading-[50px] px-9 text-[15px] bg-black text-white border border-transparent uppercase font-extrabold flex justify-center hover:bg-white hover:text-black hover:border-black transition-all;
+	}
+
+	.google-sign-in {
+		@apply bg-[#4285f4] text-white hover:bg-[#357ae8] hover:text-white hover:border-transparent;
+	}
+
+	.inverted {
+		@apply bg-white text-black border-black hover:bg-black hover:text-white hover:border-transparent;
 	}
 }
