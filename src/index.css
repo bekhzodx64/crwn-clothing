@@ -65,7 +65,7 @@
 	}
 
 	.form-input {
-		@apply bg-white text-lg px-2 pt-2 pb-1 block border-b my-6 outline-none;
+		@apply bg-white text-lg px-2 pt-2 pb-1 block border-b my-6 outline-none w-full;
 	}
 
 	.form-input-label {
@@ -85,11 +85,15 @@
 	}
 
 	.sign-up-container h2 {
-		@apply my-[10px];
+		@apply my-[10px] font-extrabold text-2xl;
+	}
+
+	.buttons-container {
+		@apply flex justify-between;
 	}
 
 	.button-container {
-		@apply min-w-[165px] w-auto h-12 tracking-wider leading-[50px] px-9 text-[15px] bg-black text-white border border-transparent uppercase font-extrabold flex justify-center hover:bg-white hover:text-black hover:border-black transition-all;
+		@apply h-12 tracking-wider px-8 text-[15px] bg-black text-white border border-transparent uppercase font-extrabold flex justify-center items-center hover:bg-white hover:text-black hover:border-black transition-all select-none;
 	}
 
 	.google-sign-in {
@@ -98,5 +102,9 @@
 
 	.inverted {
 		@apply bg-white text-black border-black hover:bg-black hover:text-white hover:border-transparent;
+	}
+
+	.authentication-container {
+		@apply flex justify-between w-[900px] my-[30px] mx-auto;
 	}
 }
