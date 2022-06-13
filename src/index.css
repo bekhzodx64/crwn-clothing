@@ -9,6 +9,10 @@
 }
 
 @layer components {
+	.logo {
+		@apply w-full h-full;
+	}
+
 	.directory-container {
 		@apply w-full flex flex-wrap justify-between;
 	}
@@ -46,18 +50,15 @@
 	}
 
 	.navigation {
-		@apply w-full h-[70px] flex justify-between mb-6;
+		@apply w-full h-[70px] flex justify-between mb-6 items-center px-5;
 	}
+
 	.logo-container {
-		@apply h-full p-6 w-[70px];
+		@apply h-full p-2 w-16;
 	}
 
 	.nav-links-container {
-		@apply w-1/2 h-full flex items-center justify-end;
-	}
-
-	.nav-link {
-		@apply px-4 py-[10px] cursor-pointer;
+		@apply w-1/2 h-full flex items-center justify-end space-x-4;
 	}
 
 	.customGroup {
