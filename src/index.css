@@ -164,4 +164,16 @@
 	.cart-dropdown-container button {
 		@apply mt-auto;
 	}
+
+	.cart-item-container {
+		@apply w-full flex h-20 mb-4;
+	}
+
+	.cart-item-container img {
+		@apply w-1/3
+	}
+
+	.item-details {
+		@apply w-[70%] flex flex-col items-start justify-center px-5 py-2;
+	}
 }
