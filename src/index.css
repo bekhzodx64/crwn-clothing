@@ -226,4 +226,20 @@
 	.remove-button {
 		@apply pl-[12px] cursor-pointer;
 	}
+
+	.category-preview-container {
+		@apply flex flex-col mb-[30px];
+	}
+
+	.title {
+		@apply text-[28px] mb-[25px] cursor-pointer;
+	}
+
+	.preview {
+		@apply grid grid-cols-4 gap-5;
+	}
+
+	.category-page-container {
+		@apply grid grid-cols-4 gap-x-5 gap-y-[50px];
+	}
 }
