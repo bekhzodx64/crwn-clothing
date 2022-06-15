@@ -42,7 +42,7 @@
 	}
 
 	.category-body-container h2 {
-		@apply font-bold mx-1 text-xl text-[#4a4a4a];
+		@apply font-bold mx-1 uppercase text-xl text-[#4a4a4a];
 	}
 
 	.category-body-container p {
@@ -154,7 +154,7 @@
 	}
 
 	.empty-message {
-		@apply text-lg my-[50px] mx-auto;
+		@apply text-lg my-auto mx-auto font-bold;
 	}
 
 	.cart-items {
