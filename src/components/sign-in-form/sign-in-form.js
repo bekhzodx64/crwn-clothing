@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {
 	signInAuthUserWithEmailAndPassword,
-	signInWithGoogleRedirect,
+	signInWithGooglePopup,
 } from '../../utils/firebase/firebase';
 import Button from '../button/button';
 import FormInput from '../form-input/form-input';
@@ -20,7 +20,7 @@ const SignInForm = () => {
 	};
 
 	const signInWithGoogle = async () => {
-		await signInWithGoogleRedirect();
+		await signInWithGooglePopup();
 	};
 
 	const handleSubmit = async (event) => {
